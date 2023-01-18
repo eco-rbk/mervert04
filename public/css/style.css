@@ -1,0 +1,699 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    overflow-y: none;
+    
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  font-family: "Open Sans", sans-serif;
+  overflow-x:hidden ;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fefefe;
+    background-color: #fefefe;
+    font-size: 15px;
+    font-family: montserrat;
+
+}
+nav ul  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    padding: 5px;
+    font-family: montserrat;
+}
+
+nav ul li {
+    font-size: 15px;
+    padding:5px;
+    font-family: montserrat;
+}
+nav li :hover {
+    border-bottom: 2px solid green;
+    padding-bottom: 5px;
+
+}
+#navbutton{
+  float:right;
+}
+.img-fluid{
+    width: auto;
+    margin: 0;
+    margin-left: 100px;
+    max-height: 70px;
+    box-sizing: inherit;
+}
+
+  input::placeholder{
+  color: red;
+  opacity: 1;
+}
+::-webkit-input-placeholder {  /* Chrome/Opera/Safari */
+  color: red;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  color: red;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: red;
+}
+:-ms-input-placeholder {  /* Edge/IE 10+ */
+  color: red;
+}
+.card{
+     box-shadow: 8px 8px 5px lightblue;
+     margin: 5px;
+     max-width: auto;
+      align-items: center;
+      transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+.card2{
+  box-shadow: 8px 8px 5px lightblue;
+  margin: 5px;
+  max-width: auto;
+  align-items: center;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+.card1{
+  box-shadow: 8px 8px 5px lightblue;
+  margin: 15px;
+  max-width: auto;
+   align-items: center;
+   transform-style: preserve-3d;
+transform-origin: center right;
+transition: transform 1s;
+}
+.card-img-top{
+  max-width: 50px;
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+   position:static;
+  color: black;
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+
+.card__face--back {
+  position:fixed;
+  color: black;
+  text-align: center;
+  font-family:monserrat;
+  transform: rotateY(180deg);
+}
+
+.calcbg{
+  /* The image used */
+  background-image : url('../image/calculator.png');
+  background-color: #fefefe;
+  height:27%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+.bg {
+    background-image : url('../image/tree.png');
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    padding:100px;
+  }
+@media(max-width:768px){
+  .bg {
+    background-image : url('../image/tree.png');
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    padding:0px;
+  }
+  .bg2{
+    /* The image used */
+    background-image : url('../image/mask1.3.png');
+    height: 35%;   
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    width:fit-content(100%);
+    justify-content:center;
+    padding:0px;
+    }
+    .calcbg{
+      /* The image used */
+      background-image : url('../image/calculator.png');
+      background-color: #fefefe;
+      height:27%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0px;
+    }
+    .biowastebg{
+      /* The image used */
+      background-image : url('../image/bio_waste.jpg');
+      height: 45%;   
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 30px;
+      width:fit-content(100%);
+      justify-content:center;
+      margin-bottom: 50px;
+      padding: 0px;
+    }
+    .farmwastebg{
+      /* The image used */
+      background-image : url('../image/farm_waste.jpg');
+      height: 45%;   
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width:fit-content(100%);
+      justify-content:center;
+      margin-bottom: 50px;
+      padding:0px
+    }
+    .foodwastebg{
+      /* The image used */
+      background-image : url('../image/food_waste.jpg');
+      height: 45%;   
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0px;
+      width:fit-content(100%);
+      justify-content:center;
+      margin-bottom: 50px;    
+    }
+    .medwastebg{
+      /* The image used */
+      background-image : url('../image/medwaste.jpg');
+      height: 45%;   
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0px;
+      width:fit-content(100%);
+      justify-content:center;
+      margin-bottom: 50px;
+      
+    }
+    .rasbg{
+      /* The image used */
+      background-image : url('../image/raskh.jpg');
+      height: 45%;   
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding:0px;
+      width:fit-content(100%);
+      justify-content:center;
+      margin-bottom: 50px;      
+    }
+    .classbbg{
+      /* The image used */
+      background-image : url('../image/class_b.jpg');
+      height: 45%;   
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0px;
+      width:fit-content(100%);
+      justify-content:center;
+      margin-bottom: 50px;    
+    }
+    .classvbg{
+      /* The image used */
+      background-image : url('../image/classv.jpg');
+      height: 45%;   
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0px;
+      width:fit-content(100%);
+      justify-content:center;
+      margin-bottom: 50px;      
+    }
+    .classgbg{
+      /* The image used */
+      background-image : url('../image/classg.jpg');
+      height: 45%;   
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding:0px;
+      width:fit-content(100%);
+      justify-content:center;
+      margin-bottom: 50px;
+      }
+      .conbg{
+        /* The image used */
+        background-image : url('../image/bg.jpg');
+        height: 45%;   
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0px;
+        width:fit-content(100%);
+        justify-content:center;
+        margin-bottom: 50px;        
+      }
+      .dezbg{
+        /* The image used */
+        background-image : url('../image/dezbg.jpg');
+        height: 45%;   
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding:0px;
+        width:fit-content(100%);
+        justify-content:center;
+        margin-bottom: 50px;
+        }
+        .ras1bg{
+          /* The image used */
+          background-image : url('../image/rasbg.jpg');
+          height: 45%;   
+          background-position:center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding: 0px;
+          width:fit-content(100%);
+          justify-content:center;
+          margin-bottom: 50px;
+          
+        }
+}
+      
+  .bg2{
+    /* The image used */
+    background-image : url('../image/mask1.png');
+    height: 35%;   
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    width:fit-content(100%);
+    justify-content:center;
+    padding:50px;
+    
+  }
+  .bg3{
+    /* The image used */
+    background-image : url('../image/mask1.png');
+    height: 30%;   
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width:fit-content(100%);
+    justify-content:center;
+    border: solid 2px grey;
+    
+  }
+  .biowastebg{
+    /* The image used */
+    background-image : url('../image/bio_waste.jpg');
+    height: 45%;   
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:fit-content(100%);
+    justify-content:center;
+    margin-bottom: 50px;
+    padding: 100px;
+  }
+  .farmwastebg{
+    /* The image used */
+    background-image : url('../image/farm_waste.jpg');
+    height: 45%;   
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:fit-content(100%);
+    justify-content:center;
+    margin-bottom: 50px;
+    padding:100px
+  }
+  .foodwastebg{
+    /* The image used */
+    background-image : url('../image/food_waste.jpg');
+    height: 45%;   
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    width:fit-content(100%);
+    justify-content:center;
+    margin-bottom: 50px;    
+  }
+  .medwastebg{
+    /* The image used */
+    background-image : url('../image/medwaste.jpg');
+    height: 45%;   
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    width:fit-content(100%);
+    justify-content:center;
+    margin-bottom: 50px;
+    
+  }
+  .rasbg{
+    /* The image used */
+    background-image : url('../image/raskh.jpg');
+    height: 45%;   
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    width:fit-content(100%);
+    justify-content:center;
+    margin-bottom: 50px;
+    
+  }
+  .classbbg{
+    /* The image used */
+    background-image : url('../image/class_b.jpg');
+    height: 45%;   
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    width:fit-content(100%);
+    justify-content:center;
+    margin-bottom: 50px;    
+  }
+  .classvbg{
+    /* The image used */
+    background-image : url('../image/classv.jpg');
+    height: 45%;   
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    width:fit-content(100%);
+    justify-content:center;
+    margin-bottom: 50px;
+    
+  }
+  .classgbg{
+    /* The image used */
+    background-image : url('../image/classg.jpg');
+    height: 45%;   
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    width:fit-content(100%);
+    justify-content:center;
+    margin-bottom: 50px;
+    
+  }
+  .conbg{
+    /* The image used */
+    background-image : url('../image/bg.jpg');
+    height: 45%;   
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    width:fit-content(100%);
+    justify-content:center;
+    margin-bottom: 50px;
+    
+  }
+  .dezbg{
+    /* The image used */
+    background-image : url('../image/dezbg.jpg');
+    height: 45%;   
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    width:fit-content(100%);
+    justify-content:center;
+    margin-bottom: 50px;
+    
+  }
+  .ras1bg{
+    /* The image used */
+    background-image : url('../image/rasbg.jpg');
+    height: 45%;   
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    width:fit-content(100%);
+    justify-content:center;
+    margin-bottom: 50px;
+    
+  }
+ .modal-content{
+    text-align: left;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+ }
+  .btn{
+    height:40px;
+    background-color: #387c44;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    display: grid;
+    margin-bottom: 5px;
+    color:white
+  }
+  .btn2{
+    height:40px;
+    background-color: #387c44;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    display: grid;
+    color:white
+  }
+  
+.bg-text{
+    margin: 3rem;
+    font-size: 85px;
+    color: rgb(187, 182, 182);
+}
+
+
+.vl {
+    border-left: 1px solid black;
+    height: 70px;
+    position: relative;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+
+.progress-container {
+    width: 100%;
+    border-bottom: 5px solid grey ;
+   
+}
+.back{
+  margin-top: 50px;
+}
+.center{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.landing-right{
+  animation-name: slideLeft;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-timing-function: ease-out;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.landing-left{
+  animation-name: slideRight;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-timing-function: ease-out;
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal2-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+
+/* Add Animation */
+.modal2-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 80%;
+  }
+}
+.buttonwhatsapp{
+  background-color:#fefefe;
+  color:black;
+  border-radius: 5px;
+  border: solid 2px green;
+  padding:3px;
+  height:35px
+}
+
+.item img{
+  height:270px;
+  width:120px;
+  margin:10px;
+  border:solid black 1px ;
+  box-shadow:  7px 7px lightgrey;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 10;
+}
+.item img  :hover {opacity: 0.7;}
+.owl-carousel{
+  position:relative;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #878686;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.float-right{
+  float: right !important;
+  max-height:110px;
+  display: block;
+  padding:10px
+}
+
+#myBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: green; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 100%; /* Rounded corners */
+}
+
+#myBtn:hover {
+  background-color: green;
+}
+.link{
+  margin-left: 170px;
+}
+@media only screen and (max-width: 700px){
+  .link{
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 0px;
+  }
+  .img-fluid{
+    width: auto;
+    margin: 0;
+    margin-left:0px;
+    max-height: 70px;
+    box-sizing: inherit;
+}
+}
